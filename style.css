@@ -1,152 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 /* font-family: 'Outfit', sans-serif; */
 /* ;;1 */
 :root {
-    --White: hsl(0,  0%, 100%);
-    --light-gray: hsl(212, 45%, 89%);
-    --grayish-blue: hsl(220, 15%, 55%);
-    --dark-blue: hsl(218, 44%, 22%);
+  --White: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
 }
 
 /* ;;2 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing:  border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 /* ;;3 */
 body {
-    font-family: 'Outfit', sans-serif;
-    background-color: var(--light-gray);
-    font-size: 15px;
-    /* ;;5 */
-    margin: 1.25rem;
-    /* ;;8 */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 1px);
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-gray);
+  font-size: 15px;
+  /* ;;5 */
+  margin: 1.25rem;
+  /* ;;8 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px);
 }
 
 /* ;;4 */
 .container {
-    background-color: var(--White);
-    padding: 1.25rem;
-    border-radius: 0.625rem;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
-    /* ;;12 */
-    margin-bottom: 1rem;
+  background-color: var(--White);
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  /* ;;12 */
+  margin-bottom: 1rem;
 }
 
 /* ;;6 */
 div img {
-    width: 100%;
+  width: 100%;
 }
 
 /* ;;7 */
 .container img {
-    border-radius: 0.6625rem;
-    margin-bottom: 1rem;
+  border-radius: 0.6625rem;
+  margin-bottom: 1rem;
 }
 
 /* ;;9 */
 .container hi {
-    color: var(--dark-blue);
-    text-align: center;
-    margin-bottom: 1rem;
+  color: var(--dark-blue);
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .container p {
-    color: var(--grayish-blue);
+  color: var(--grayish-blue);
 }
 
 /* ;;10 */
 @media (min-width: 500px) {
-    .container {
-        width: 459px;
-    }
+  .container {
+    width: 459px;
+  }
 }
 
 /* ;;11 */
 @media (max-width: 360px) {
-    .container {
-        width: 320px;
-    }
+  .container {
+    width: 320px;
+  }
 }
 
 /* ;;12 */
 .atrtributon {
-    font-size: 14px;
-    /* ;;20 */
-    color: var(--dark-blue);
-    transition: 0.5s;
+  font-size: 14px;
+  /* ;;20 */
+  color: var(--dark-blue);
+  transition: 0.5s;
 }
 
 /* :nth-child(n) mengarahkan ke tag a yang ke n  */
 .atrtributon a:nth-child(2) {
-    color: white;
+  color: white;
 }
-
 
 /* ;;21 */
 .atrtributon a:nth-child(1) {
-    color: var(--light-gray);
+  color: var(--light-gray);
 }
-
 
 /* bagian tombol toggle */
 /* ;; 13 */
 .wadah-bulat {
-    position: relative;
-    background: rgb(253, 253, 253);
-    /* display: block */
-    width: 120px;
-    height: 60px;
-    border-radius: 60px;
-    margin-bottom: 20px;
-    transition: 0.5s;
-    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),inset 0 8px 8px rgba(0, 0, 0, 0.1),inset 0 -4px 4px rgba(0, 0, 0, 0.1);
-    /* ;;15 */
-    cursor: pointer;
+  position: relative;
+  background: rgb(253, 253, 253);
+  /* display: block */
+  width: 120px;
+  height: 60px;
+  border-radius: 60px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  /* ;;15 */
+  cursor: pointer;
 }
 
 /* ;;17 */
 .wadah-bulat.active {
-    background: rgb(60, 60, 60);
-    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),inset 0 2px 8px rgba(0, 0, 0, 0.1),inset 0 -4px 4px rgba(0, 0, 0, 0.05);
+  background: rgb(60, 60, 60);
+  box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+    inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* ;;14 */
 .wadah-bulat .bulat {
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    box-shadow: 0 8px 60px rgba(0, 0, 0, 0.1),inset 0 4px 4px rgba(255, 255, 255, 255,1),inset 0 -4px 4px rgba(255, 255, 255, 255,1);
-    border-radius: 50%;
-    transform: scale(0.9);
-    background: linear-gradient(to bottom, #ffffff, #ffffff);
-    transition: 0.5s;
-
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  box-shadow: 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 4px 4px rgba(255, 255, 255, 255, 1),
+    inset 0 -4px 4px rgba(255, 255, 255, 255, 1);
+  border-radius: 50%;
+  transform: scale(0.9);
+  background: linear-gradient(to bottom, #ffffff, #ffffff);
+  transition: 0.5s;
 }
 
 /* ;;16 */
 .wadah-bulat.active .bulat {
-    left: 60px;
-    /* ;;18 */
-    background: linear-gradient(to bottom, #444, #222);
-    box-shadow: inset 0 8px 40px rgba(221, 218, 218, 0.5),inset 0 4px 4px rgba(255, 255, 255, 0.2),inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+  left: 60px;
+  /* ;;18 */
+  background: linear-gradient(to bottom, #444, #222);
+  box-shadow: inset 0 8px 40px rgba(221, 218, 218, 0.5),
+    inset 0 4px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
 }
 
 /* ;;19 */
 body.active {
-    --white: #252525;
-    --light-gray: #121212;
-    --grayish-blue:hsl(220, 15%, 55%);
-    --dark-blue: hsl(0, 0%, 100%);
-
-
+  --white: #252525;
+  --light-gray: #121212;
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(0, 0%, 100%);
 }
