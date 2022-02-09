@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR- Code Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 1 -->
+    <div id="wadah-bulat" class="wadah-bulat">
+        <i class="bulat"></i>
+    </div>
+    <div class="container">
+        <img src="./images/image-qr-code.png" alt="">
+        <h1>
+            Improve your front-end skills by building projects
+        </h1>
+        <p>
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+    </div>
+    <div class="att ribution">
+        Challenge by
+        <a href="">
+            Frontend Mentor
+        </a>
+        .
+        Coded by
+        <a href="">
+            Your Name Here
+        </a>
+    </div>
+
+    <script>
+        const body = document.querySelector('body');
+        const wadah = document.getElementById('wadah-bulat');
+        wadah.onclick = function () {
+            wadah.classList.toggle('active');
+            body.classList.toggle('active');
+        };
+    </script>
+</body>
+
+</html>
